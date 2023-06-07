@@ -11,6 +11,7 @@
     <div v-if="foundData" class="student-info">
       <img :src="foundData.image" :alt="foundData.name" class="student-image">
       <h2 class="student-name">{{ foundData.name }}</h2>
+      <h2 class="lulus">Anda Dinyatakan Lulus</h2>
     </div>
     <h1 class="app-title">Input NISN</h1>
     <div class="search-container">
@@ -200,6 +201,12 @@ export default {
 .logo{
   width: 64px;
   height: 64px;
+}
+
+.lulus{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: greenyellow;
 }
 
 </style>
